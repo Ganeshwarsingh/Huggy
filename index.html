@@ -309,7 +309,7 @@ let rt=0;
 /* ── Hug ── */
 /* ⚙️ EDIT THIS: your WhatsApp number, country code + number, NO + sign, NO spaces.
    Example: Mauritius number 5xxx xxxx -> "23057xxxxxxx" */
-const WHATSAPP_NUMBER = "PUT_YOUR_NUMBER_HERE"; // e.g. "23057123456"
+const WHATSAPP_NUMBER = "23057015550"; // e.g. "23057123456"
 
 const btn     = document.getElementById('hugBtn');
 const cntEl   = document.getElementById('cntVal');
@@ -358,7 +358,7 @@ const waMessages = [
 ];
 
 function openWhatsAppHug(totalCount) {
-  if (!WHATSAPP_NUMBER || WHATSAPP_NUMBER === "PUT_YOUR_NUMBER_HERE") return; // safety: do nothing until configured
+  if (!WHATSAPP_NUMBER || WHATSAPP_NUMBER === "23057015550") return; // safety: do nothing until configured
   const msg = waMessages[Math.floor(Math.random() * waMessages.length)]
     + ` (${totalCount} hugs sent so far!)`;
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
